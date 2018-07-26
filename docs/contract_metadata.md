@@ -15,12 +15,32 @@ Values are addresses of libraries used for linking the contract.
 `autoDeployLib` defines if the libraries should be auto deployed by Remix or if the contract should be linked with libraries described in `linkReferences`
 
 ```
-{
-	"linkReferences": {
-		"browser/Untitled.sol": {
-			"lib": "0x8c1ed7e19abaa9f23c476da86dc1577f1ef401f5"
-		}
+	"VM:-": {
+		"linkReferences": {
+			"browser/Untitled.sol": {
+				"lib": "dddd",
+				"lib2": "ess>"
+			}
+		},
+		"autoDeployLib": true
 	},
-	"autoDeployLib": false
-}
+	"main:1": {
+		"linkReferences": {
+			"browser/Untitled.sol": {
+				"lib": "<address>",
+				"lib2": "<address>"
+			}
+		},
+		"autoDeployLib": true
+	},
+	"ropsten:3": {
+		"linkReferences": {
+			"browser/Untitled.sol": {
+				"lib": "<address>",
+				"lib2": "<address>"
+			}
+		},
+		"autoDeployLib": true
+	},
+	...
 ```
